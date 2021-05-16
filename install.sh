@@ -64,13 +64,13 @@ mv $DIRECTORY/resources/conf.h $HOME/git/yaft/
 export LANG=en_US.UTF-8
 make
 make install
-sudo mv $DIRECTORY/resources/bg.jpg /
 
 # ------------------------------------------------------------------------
 
-echo -e "\nMoving files, $USER-sama."
+echo -e "\nMoving files, $USER-sama. Running neofetch to generate config."
 
-cp $DIRECTORY/resources/neofetch/config.conf $HOME/.config/neofetch/
+neofetch
+cp $DIRECTORY/resources/neofetch/config.conf $HOME/.config/neofetch/config.conf
 cp $DIRECTORY/resources/bg.jpg $HOME
 cp $DIRECTORY/resources/rempixel.png $HOME
 cp $DIRECTORY/resources/.bashrc $HOME
