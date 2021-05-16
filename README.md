@@ -1,5 +1,7 @@
 # rem-os
 
+![](https://raw.githubusercontent.com/ablazingeboy/rem-os/main/resources/rem.jpg)
+
 *Why the fxxk did I make this*
 
 Please never use this.
@@ -16,3 +18,7 @@ chmod +x install.sh
 ./install.sh
 # Restart before using the system
 ```
+
+## Screenshot
+
+![](https://raw.githubusercontent.com/ablazingeboy/rem-os/main/resources/remosscreenshot.png)
