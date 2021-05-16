@@ -25,7 +25,6 @@ PKGS=(
     # DEVELOPMENT ---------------------------------------------------------
 
     'micro'                 # Text editor
-    'git'                   # Version control system
     'python'                # Scripting language
 
 
