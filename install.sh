@@ -31,9 +31,7 @@ done
 
 echo -e "\nDone installing packages, $USER-sama!\n"
 
-#-------------------------------------------------------------------------
-
-echo -e "\nJust doing a little housekeeping, $USER-sama"
+micro -plugin install filemanager
 
 # ------------------------------------------------------------------------
 
@@ -60,13 +58,12 @@ sudo make install
 
 # ------------------------------------------------------------------------
 
-echo -e "\nMoving files, $USER-sama. Running neofetch to generate config."
+echo -e "\nMoving files, $USER-sama."
 
-neofetch
-cp $DIRECTORY/resources/neofetch/config.conf $HOME/.config/neofetch/config.conf
 cp $DIRECTORY/resources/bg.jpg $HOME
 cp $DIRECTORY/resources/rempixel.png $HOME
 cp $DIRECTORY/resources/.bashrc $HOME
+cp $DIRECTORY/resources/micro/settings.json $HOME/.config/micro
 mkdir $HOME/bin
 cp $DIRECTORY/resources/ufetch-rem $HOME/bin
 chmod +x $HOME/bin/ufetch-rem

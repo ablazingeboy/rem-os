@@ -98,7 +98,7 @@ alias more=less
 alias fortune='catimg -w 48 $HOME/rempixel.png && fortune && echo'
 alias rem='echo "As you wish, $USER-sama. Executing command now." && sudo '
 alias rem,='echo "As you wish, $USER-sama. Executing command now." && sudo '
-alias ufetch='sh ufetch-rem'
+alias ufetch='ufetch-rem'
 
 xhost +local:root > /dev/null 2>&1
 
