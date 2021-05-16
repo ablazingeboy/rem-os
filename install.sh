@@ -15,7 +15,6 @@ PKGS=(
     'base-devel'            # Dev tools
     'wget'                  # Remote content retrieval
     'htop'                  # Process viewer
-    'neofetch'              # Shows system info
     'fbv'                   # Framebuffer image viewer
     'fortune-mod'           # Fortune
     'catimg'                # Image backend
@@ -68,6 +67,9 @@ cp $DIRECTORY/resources/neofetch/config.conf $HOME/.config/neofetch/config.conf
 cp $DIRECTORY/resources/bg.jpg $HOME
 cp $DIRECTORY/resources/rempixel.png $HOME
 cp $DIRECTORY/resources/.bashrc $HOME
+mkdir $HOME/bin
+cp $DIRECTORY/resources/ufetch-rem $HOME/bin
+chmod +x $HOME/bin/ufetch-rem
 
 # ------------------------------------------------------------------------
 

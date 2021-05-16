@@ -22,3 +22,7 @@ chmod +x install.sh
 ## Screenshot
 
 ![](https://raw.githubusercontent.com/ablazingeboy/rem-os/main/resources/remosscreenshot.png)
+
+## Credits
+
+- ufetch-rem based on [ufetch](https://gitlab.com/jschx/ufetch)

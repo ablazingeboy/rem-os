@@ -98,6 +98,7 @@ alias more=less
 alias fortune='catimg -w 48 $HOME/rempixel.png && fortune && echo'
 alias rem='echo "As you wish, $USER-sama. Executing command now." && sudo '
 alias rem,='echo "As you wish, $USER-sama. Executing command now." && sudo '
+alias ufetch='sh ufetch-rem'
 
 xhost +local:root > /dev/null 2>&1
 
@@ -112,6 +113,8 @@ shopt -s checkwinsize
 shopt -s expand_aliases
 
 PS1='\e[36mWhat is your command, \u-sama?\e[0m\n\w \e[1;35m♥\e[0m '
+
+PATH=$PATH:~/bin
 
 if [ $TERM == "linux" ]
 then

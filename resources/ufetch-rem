@@ -11,6 +11,7 @@ kernel="$(uname -sr)"
 uptime="$(uptime -p | sed 's/up //')"
 packages="$(xbps-query -l | wc -l)"
 shell="$(basename "${SHELL}")"
+mem="$(free -m | awk 'NR==2{printf "%s/%sMB (%.2f%%)\n", $3,$2,$3*100/$2 }')"
 
 ## UI DETECTION
 
@@ -63,20 +64,20 @@ if [ -x "$(command -v tput)" ]; then
 fi
 
 # you can change these
-lc="${reset}${bold}${green}"        # labels
-nc="${reset}${bold}${green}"        # user and hostname
+lc="${reset}${bold}${cyan}"        # labels
+nc="${reset}${bold}${cyan}"        # user and hostname
 ic="${reset}"                       # info
-c0="${reset}${bold}${green}"        # first color
+c0="${reset}${bold}${cyan}"        # first color
 c1="${reset}${green}"               # second color
 
 ## OUTPUT
 
 cat <<EOF
 
-${c0}  888d888 .d88b. 88888b.d88b.        ${nc}${USER}${ic}@${nc}${host}${reset}
-${c1}  888P"  d8P  Y8b888 "888 "88b${lc}OS:        ${ic}${os}${reset}
-${c1}  888    88888888888  888  888${lc}KERNEL:    ${ic}${kernel}${reset}
-${c1}  888    Y8b.    888  888  888${lc}UPTIME:    ${ic}${uptime}${reset}
-${c1}  888     "Y8888 888  888  888${lc}PACKAGES:  ${ic}${packages}${reset}
+${c0}  888d888 .d88b. 88888b.d88b.  	${nc}${USER}${ic}@${nc}${host}${reset}
+${c0}  888P"  d8P  Y8b888 "888 "88b	${lc}OS:   ${ic}${os}${reset}
+${c0}  888    88888888888  888  888	${lc}UP:   ${ic}${uptime}${reset}
+${c0}  888    Y8b.    888  888  888	${lc}PKG:  ${ic}${packages}${reset}
+${c0}  888     "Y8888 888  888  888	${lc}MEM:  ${ic}${mem}${reset}
 
 EOF
