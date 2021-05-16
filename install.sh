@@ -16,18 +16,12 @@ PKGS=(
     'wget'                  # Remote content retrieval
     'htop'                  # Process viewer
     'neofetch'              # Shows system info
-
-    # GENERAL UTILITIES ---------------------------------------------------
-
     'fbv'                   # Framebuffer image viewer
     'fortune-mod'           # Fortune
     'catimg'                # Image backend
-
-    # DEVELOPMENT ---------------------------------------------------------
-
     'micro'                 # Text editor
     'python'                # Scripting language
-
+    'lazygit'               # Git client
 
 )
 

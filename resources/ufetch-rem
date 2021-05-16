@@ -6,7 +6,7 @@
 
 # user is already defined
 host="$(hostname)"
-os='Void Linux'
+os='Rem-OS'
 kernel="$(uname -sr)"
 uptime="$(uptime -p | sed 's/up //')"
 packages="$(xbps-query -l | wc -l)"
@@ -73,12 +73,10 @@ c1="${reset}${green}"               # second color
 
 cat <<EOF
 
-${c0}      _______      ${nc}${USER}${ic}@${nc}${host}${reset}
-${c1}      ${c0}\_____ \`-    ${lc}OS:        ${ic}${os}${reset}
-${c1}   /\   ${c0}___ \`- \   ${lc}KERNEL:    ${ic}${kernel}${reset}
-${c1}  | |  ${c0}/   \  | |  ${lc}UPTIME:    ${ic}${uptime}${reset}
-${c1}  | |  ${c0}\___/  | |  ${lc}PACKAGES:  ${ic}${packages}${reset}
-${c1}   \ \`-_____  ${c0}\/   ${lc}SHELL:     ${ic}${shell}${reset}
-${c1}    \`-______\      ${lc}${uitype}:        ${ic}${ui}${reset}
+${c0}  888d888 .d88b. 88888b.d88b.        ${nc}${USER}${ic}@${nc}${host}${reset}
+${c1}  888P"  d8P  Y8b888 "888 "88b${lc}OS:        ${ic}${os}${reset}
+${c1}  888    88888888888  888  888${lc}KERNEL:    ${ic}${kernel}${reset}
+${c1}  888    Y8b.    888  888  888${lc}UPTIME:    ${ic}${uptime}${reset}
+${c1}  888     "Y8888 888  888  888${lc}PACKAGES:  ${ic}${packages}${reset}
 
 EOF
