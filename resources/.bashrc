@@ -118,3 +118,4 @@ then
     yaft_wall $HOME/bg.jpg
 else
     fortune	
+fi
