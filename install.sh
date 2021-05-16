@@ -39,11 +39,11 @@ echo -e "\nDone installing packages, $USER-sama!\n"
 
 #-------------------------------------------------------------------------
 
-echo -e "\nJust doing a little housekeeping, master"
+echo -e "\nJust doing a little housekeeping, $USER-sama"
 
 # ------------------------------------------------------------------------
 
-echo -e "\nWriting a few notes for you, master."
+echo -e "\nWriting a few notes for you, $USER-sama."
 
 DIRECTORY=$(cd `dirname $0` && pwd)
 
@@ -53,7 +53,7 @@ sudo mv $DIRECTORY/resources/remquotes $DIRECTORY/resources/remquotes.dat /usr/s
 
 # ------------------------------------------------------------------------
 
-echo -e "\nBuilding yaft, master."
+echo -e "\nBuilding yaft, $USER-sama."
 
 mkdir $HOME/git
 cd $HOME/git
@@ -67,7 +67,7 @@ sudo mv $DIRECTORY/resources/bg.jpg /
 
 # ------------------------------------------------------------------------
 
-echo -e "\nMoving files, master."
+echo -e "\nMoving files, $USER-sama."
 
 mv $DIRECTORY/resources/neofetch/config.conf $HOME/.config/neofetch/
 mv $DIRECTORY/resources/bg.jpg $HOME
