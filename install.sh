@@ -12,6 +12,7 @@ echo -e "\nInstalling necessary software, $USER-sama. No bloat, I promise.\n"
 
 PKGS=(
 
+    'base-devel'            # Dev tools
     'wget'                  # Remote content retrieval
     'htop'                  # Process viewer
     'neofetch'              # Shows system info
@@ -48,8 +49,8 @@ echo -e "\nWriting a few notes for you, $USER-sama."
 DIRECTORY=$(cd `dirname $0` && pwd)
 
 strfile $DIRECTORY/resources/remquotes
-sudo rm -rf /usr/share/fortune/*
-sudo mv $DIRECTORY/resources/remquotes $DIRECTORY/resources/remquotes.dat /usr/share/fortune/
+sudo rm -rf /usr/share/fortunes/*
+sudo mv $DIRECTORY/resources/remquotes $DIRECTORY/resources/remquotes.dat /usr/share/fortunes/
 
 # ------------------------------------------------------------------------
 
@@ -69,14 +70,14 @@ sudo mv $DIRECTORY/resources/bg.jpg /
 
 echo -e "\nMoving files, $USER-sama."
 
-mv $DIRECTORY/resources/neofetch/config.conf $HOME/.config/neofetch/
-mv $DIRECTORY/resources/bg.jpg $HOME
-mv $DIRECTORY/resources/rempixel.png $HOME
-mv $DIRECTORY/resources/.bashrc $HOME
+cp $DIRECTORY/resources/neofetch/config.conf $HOME/.config/neofetch/
+cp $DIRECTORY/resources/bg.jpg $HOME
+cp $DIRECTORY/resources/rempixel.png $HOME
+cp $DIRECTORY/resources/.bashrc $HOME
 
 # ------------------------------------------------------------------------
 
-echo -e"\nSetting your keymap to Colemak, $USER-sama\n"
+echo -e "\nSetting your keymap to Colemak, $USER-sama\n"
 
 sudo sed -i -e "s|#\?KEYMAP=.*|KEYMAP=colemak|" /etc/rc.conf
 
