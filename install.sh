@@ -56,11 +56,11 @@ sudo mv $DIRECTORY/resources/remquotes $DIRECTORY/resources/remquotes.dat /usr/s
 
 echo -e "\nBuilding yaft, $USER-sama."
 
-mkdir $HOME/git
-cd $HOME/git
+cd $HOME
 git clone https://github.com/uobikiemukot/yaft
-rm $HOME/git/yaft/conf.h
-mv $DIRECTORY/resources/conf.h $HOME/git/yaft/
+cd yaft
+rm conf.h
+cp $DIRECTORY/resources/conf.h $HOME/yaft/
 export LANG=en_US.UTF-8
 make
 make install
