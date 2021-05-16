@@ -63,7 +63,7 @@ rm conf.h
 cp $DIRECTORY/resources/conf.h $HOME/yaft/
 export LANG=en_US.UTF-8
 make
-make install
+sudo make install
 
 # ------------------------------------------------------------------------
 
