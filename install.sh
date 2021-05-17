@@ -19,7 +19,8 @@ PKGS=(
     'fortune-mod'           # Fortune
     'catimg'                # Image backend
     'micro'                 # Text editor
-    'python'                # Scripting language
+    'python3'               # Scripting language
+    'python3-pip'           # Package manager for python
     'lazygit'               # Git client
 
 )
